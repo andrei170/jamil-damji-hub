@@ -3,432 +3,230 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Built For Jamil Damji · AG1 Consulting</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>For Jamil - Funnel Infrastructure For Astro Flipping - AG1 Consulting</title>
+<meta name="description" content="Built for Jamil Damji. Four pieces of funnel infrastructure I would install in the first 7 days from kickoff. VSL on the Astro Flipping enrolment surface, Wholesaling Readiness scorecard, application gate before Stripe, unified hub plus GHL CRM.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Infrastructure For Astro Flipping - For Jamil">
+<meta property="og:description" content="Four pieces of funnel infrastructure I would install in the first 7 days. VSL, scorecard, application gate, unified hub.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andrei170.github.io/jamil-damji-hub/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0805;--bg-2:#110e0a;--surface:#1a160f;--surface-2:#221c12;--line:rgba(201,151,58,.15);--line-2:rgba(201,151,58,.3);--text:#f8f3e8;--muted:#a69885;--gold:#c9973a;--gold-2:#e2b96a;--gold-3:#f0d79a;--red:#c97a3a}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
-body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(201,151,58,.025) 1px,transparent 1px);background-size:24px 24px;pointer-events:none;z-index:0}
-body::after{content:'';position:fixed;top:-30%;right:-10%;width:70%;height:80%;background:radial-gradient(circle,rgba(201,151,58,.07) 0%,transparent 60%);pointer-events:none;z-index:0}
-.container{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
-.container-narrow{max-width:820px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
-nav{padding:24px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,8,5,.94);backdrop-filter:blur(14px);z-index:100}
-.nav-inner{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:18px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.18em;text-transform:uppercase}
-.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
-section{padding:80px 0}
-.hero{padding:100px 0 60px;text-align:center}
-.eyebrow{display:inline-block;padding:6px 16px;background:rgba(201,151,58,.1);border:1px solid rgba(201,151,58,.3);border-radius:24px;font-size:12px;font-weight:600;color:var(--gold-2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:28px}
-h1{font-size:clamp(40px,5.6vw,64px);font-weight:800;line-height:1.06;letter-spacing:-.03em;margin-bottom:24px}
-h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-h2{font-size:clamp(28px,3.8vw,40px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
-.section-sub{color:var(--muted);font-size:18px;margin-bottom:48px;max-width:680px}
-h3{font-size:22px;font-weight:700;color:var(--text);margin-bottom:10px}
-h4{font-size:14px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.14em;margin:24px 0 12px;font-weight:700}
-p{color:var(--muted);font-size:17px;max-width:680px}
-.hero p{font-size:19px;margin:0 auto 40px;color:var(--muted)}
-.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.meta-item{text-align:center}
-.meta-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;margin-bottom:10px}
-.meta-value{font-size:20px;color:var(--text);font-weight:700;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.prose p{margin-bottom:18px;font-size:17px}
-.prose p:last-child{margin-bottom:0}
-.prose strong{color:var(--text);font-weight:600}
-.prose blockquote{margin:24px 0;padding:20px 26px;background:rgba(201,151,58,.06);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-size:18px;color:var(--text);font-style:italic;line-height:1.55}
-.prose blockquote .quote-attr{display:block;margin-top:10px;font-size:13px;color:var(--gold-2);font-style:normal;letter-spacing:.05em}
-.signature{margin-top:32px;font-size:15px;color:var(--gold-2);font-style:italic}
-.gap-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:8px}
-.gap-card{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;padding:32px;transition:.3s}
-.gap-card:hover{border-color:var(--line-2)}
-.gap-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px}
-.gap-tag.critical{background:rgba(201,122,58,.15);color:var(--red);border:1px solid rgba(201,122,58,.3)}
-.gap-tag.high{background:rgba(201,151,58,.12);color:var(--gold-2);border:1px solid rgba(201,151,58,.3)}
-.gap-card h3{margin-bottom:14px}
-.gap-card p{font-size:16px;margin-bottom:14px}
-.gap-card .fix{padding-top:14px;border-top:1px solid var(--line);font-size:15px}
-.gap-card .fix strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.1em;font-size:12px;display:block;margin-bottom:6px}
-.market-table{display:flex;flex-direction:column;gap:14px;margin-top:8px}
-.market-row{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:24px 28px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:12px;align-items:start}
-.market-name{font-weight:700;color:var(--text);font-size:17px}
-.market-price{font-size:13px;color:var(--gold-2);margin-top:4px;letter-spacing:.05em}
-.market-note{font-size:15px;color:var(--muted);line-height:1.6}
-.market-callout{margin-top:24px;padding:24px 28px;background:rgba(201,151,58,.06);border:1px solid var(--line-2);border-radius:12px;font-size:16px;color:var(--text)}
-.market-callout strong{color:var(--gold-2)}
-.phase-block{display:grid;grid-template-columns:120px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line)}
-.phase-block:last-child{border-bottom:0}
-.phase-num{font-family:monospace;font-size:14px;color:var(--gold-2);letter-spacing:.15em;font-weight:700}
-.phase-num .month{display:block;color:var(--muted);font-size:11px;margin-top:6px;letter-spacing:.1em}
-.phase-content h3{margin-bottom:14px;font-size:24px}
-.phase-content ul{list-style:none;padding:0;margin:14px 0}
-.phase-content li{padding:6px 0 6px 22px;position:relative;color:var(--muted);font-size:16px}
-.phase-content li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
-.phase-content .rev-line{margin-top:18px;padding:14px 18px;background:rgba(201,151,58,.06);border-left:2px solid var(--gold);border-radius:0 8px 8px 0;font-size:15px;color:var(--text)}
-.phase-content .rev-line strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.1em;font-size:11px;display:block;margin-bottom:4px;font-weight:700}
-.rev-table{margin-top:8px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:14px;padding:32px;overflow:hidden}
-.rev-row{display:grid;grid-template-columns:1fr auto;gap:32px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.rev-row:last-of-type{border-bottom:0}
-.rev-stream{color:var(--muted);font-size:16px}
-.rev-stream strong{color:var(--text);font-weight:600;display:block;margin-bottom:2px}
-.rev-amount{font-size:22px;font-weight:700;color:var(--gold-2);font-family:monospace;white-space:nowrap}
-.rev-total{margin-top:18px;padding-top:24px;border-top:2px solid var(--line-2);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:baseline}
-.rev-total-label{font-size:14px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.15em;font-weight:700}
-.rev-total-amount{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:monospace;white-space:nowrap}
-.rev-note{margin-top:24px;padding:20px 24px;background:rgba(201,151,58,.06);border:1px solid var(--line);border-radius:10px;font-size:15px;color:var(--text)}
-.rev-note strong{color:var(--gold-2)}
-.rev-caveat{margin-top:14px;padding:14px 18px;border:1px dashed var(--line-2);border-radius:8px;font-size:13px;color:var(--muted);font-family:'Inter',sans-serif}
-.rev-caveat strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.12em;font-size:11px;display:block;margin-bottom:4px}
-.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
-.proof-card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
-.proof-card h3{font-size:20px;margin-bottom:6px}
-.proof-card .role{font-size:12px;color:var(--gold-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:18px;font-weight:700}
-.proof-card p{font-size:15px;line-height:1.7}
-.offer-block{padding:48px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:18px}
-.offer-block h3{font-size:24px;margin-bottom:8px}
-.offer-block .scope-intro{color:var(--muted);font-size:16px;margin-bottom:28px}
-.scope-list{list-style:none;padding:0;margin:0}
-.scope-list li{padding:14px 0 14px 36px;position:relative;color:var(--text);font-size:16px;border-bottom:1px solid var(--line)}
-.scope-list li:last-child{border-bottom:0}
-.scope-list li::before{content:'';width:18px;height:18px;border:1.5px solid var(--gold);border-radius:50%;position:absolute;left:0;top:18px;background:rgba(201,151,58,.08)}
-.scope-list li::after{content:'';width:6px;height:10px;border-right:2px solid var(--gold-2);border-bottom:2px solid var(--gold-2);transform:rotate(45deg);position:absolute;left:6px;top:20px}
-.offer-block .price-note{margin-top:32px;padding-top:28px;border-top:1px solid var(--line-2);font-size:15px;color:var(--gold-2);text-align:center}
-.faq-item{border-bottom:1px solid var(--line);padding:0}
-.faq-q{padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:18px;font-weight:600;color:var(--text);transition:.2s}
-.faq-q:hover{color:var(--gold-2)}
-.faq-toggle{width:24px;height:24px;border-radius:50%;border:1px solid var(--line-2);position:relative;flex-shrink:0;transition:.3s}
-.faq-toggle::before,.faq-toggle::after{content:'';position:absolute;background:var(--gold-2);top:50%;left:50%;transition:.3s}
-.faq-toggle::before{width:10px;height:1.5px;transform:translate(-50%,-50%)}
-.faq-toggle::after{width:1.5px;height:10px;transform:translate(-50%,-50%)}
-.faq-item.open .faq-toggle::after{opacity:0}
-.faq-a{max-height:0;overflow:hidden;transition:.4s}
-.faq-item.open .faq-a{max-height:600px;padding-bottom:24px}
-.faq-a p{font-size:16px;color:var(--muted);max-width:none}
-.cta-section{background:linear-gradient(135deg,rgba(201,151,58,.1) 0%,rgba(226,185,106,.04) 100%);border:1px solid rgba(201,151,58,.3);border-radius:24px;padding:80px 60px;text-align:center;margin:40px 0 60px}
-.cta-section h2{max-width:620px;margin:0 auto 20px}
-.cta-section p{margin:0 auto 36px;max-width:560px;font-size:17px}
-.cta-primary{display:inline-block;padding:20px 44px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 12px 40px rgba(201,151,58,.3);transition:.2s}
-.cta-primary:hover{transform:translateY(-2px)}
-.cta-sign{margin-top:28px;font-size:14px;color:var(--gold-2);font-style:italic}
-.hero-cta-row{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.cta-outline{display:inline-block;padding:18px 36px;background:transparent;color:var(--gold-2);text-decoration:none;border:1px solid var(--line-2);border-radius:12px;font-weight:600;font-size:15px;transition:.2s}
-.cta-outline:hover{border-color:var(--gold-2)}
-.footer{padding:48px 0;border-top:1px solid var(--line);text-align:center}
-.footer p{margin:0 auto;font-size:13px;color:var(--muted);letter-spacing:.05em}
-@media(max-width:768px){
-.meta-grid{grid-template-columns:1fr}
-.cta-section{padding:50px 24px}
-.market-row{grid-template-columns:1fr;gap:8px}
-.phase-block{grid-template-columns:1fr;gap:8px}
-.proof-grid{grid-template-columns:1fr}
-.offer-block{padding:32px 24px}
-section{padding:60px 0}
-}
-.moat-callout{margin-top:32px;padding:32px 36px;background:linear-gradient(135deg,rgba(201,151,58,.08) 0%,rgba(226,185,106,.03) 100%);border:1px solid var(--line-2);border-radius:14px}
-.moat-eyebrow{font-size:11px;color:var(--gold-2);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:12px}
-.moat-callout p{font-size:18px;color:var(--text);margin:0;max-width:none;line-height:1.6}
-.moat-callout p strong{color:var(--gold-2)}
-.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
-.contrast-card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
-.contrast-card.current{opacity:.7}
-.contrast-card.future{border-color:var(--line-2);background:linear-gradient(180deg,rgba(201,151,58,.06) 0%,var(--bg-2) 100%)}
-.contrast-tag{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:14px;display:inline-block}
-.contrast-card.current .contrast-tag{background:rgba(166,152,133,.15);color:var(--muted);border:1px solid rgba(166,152,133,.3)}
-.contrast-card.future .contrast-tag{background:rgba(201,151,58,.15);color:var(--gold-2);border:1px solid rgba(201,151,58,.3)}
-.contrast-card h3{margin-bottom:18px;font-size:20px}
-.contrast-card ul{list-style:none;padding:0;margin:0}
-.contrast-card li{padding:8px 0 8px 22px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
-.contrast-card.current li::before{content:'';width:6px;height:6px;background:var(--muted);border-radius:50%;position:absolute;left:0;top:14px;opacity:.5}
-.contrast-card.future li::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;position:absolute;left:0;top:14px}
-.premium-table{margin-top:24px;border-color:var(--line-2)!important;background:linear-gradient(180deg,rgba(201,151,58,.04) 0%,var(--bg-2) 100%)!important}
-.premium-eyebrow{display:inline-block;padding:5px 14px;background:rgba(201,151,58,.15);border:1px solid var(--line-2);border-radius:24px;font-size:11px;font-weight:700;color:var(--gold-2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
-.asset-table{background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;padding:8px 32px;margin-top:8px}
-.asset-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.asset-row:last-child{border-bottom:0}
-.asset-row.asset-header{padding:24px 0 18px}
-.asset-col-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;font-weight:700}
-.asset-col-label.asset-built-label{color:var(--gold-2)}
-.asset-cat{font-size:14px;color:var(--muted);font-weight:500}
-.asset-val{font-size:17px;font-weight:600}
-.asset-today{color:var(--muted);opacity:.75}
-.asset-built{color:var(--gold-2)}
-.anti-hype{margin-top:32px;padding:32px 36px;background:rgba(0,0,0,.18);border:1px dashed var(--line-2);border-radius:14px}
-.anti-hype-eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:18px}
-.anti-hype-list{list-style:none;padding:0;margin:0 0 20px}
-.anti-hype-list li{padding:6px 0 6px 26px;position:relative;color:var(--muted);font-size:15px;line-height:1.6}
-.anti-hype-list li::before{content:'×';position:absolute;left:0;top:2px;color:var(--red);font-size:20px;font-weight:700;line-height:1}
-.anti-hype p{font-size:15px;color:var(--text);margin:0;max-width:none;line-height:1.7}
-.anti-hype p strong{color:var(--gold-2)}
-.call-agenda{text-align:left;max-width:520px;margin:0 auto 32px;display:grid;gap:14px}
-.call-agenda-item{display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:start}
-.call-agenda-num{font-family:monospace;color:var(--gold-2);font-weight:700;font-size:14px;padding-top:2px}
-.call-agenda-text{color:var(--text);font-size:15px;line-height:1.6}
-@media(max-width:768px){.contrast-grid{grid-template-columns:1fr}.moat-callout{padding:24px}.asset-table{padding:8px 20px}.asset-row{grid-template-columns:1fr;gap:6px;padding:14px 0}.asset-row.asset-header{display:none}.asset-cat{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-2)}.anti-hype{padding:24px}}
-.floating-cta{position:fixed;bottom:24px;right:24px;padding:16px 28px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#0a0805;text-decoration:none;border-radius:12px;font-weight:700;font-size:14px;box-shadow:0 12px 40px rgba(201,151,58,.4);z-index:1000;transition:.2s}
-.floating-cta:hover{transform:translateY(-2px)}
-@media(max-width:768px){.floating-cta{bottom:16px;right:16px;padding:14px 22px;font-size:13px}}
-.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
-.result-card{padding:32px 24px;background:linear-gradient(180deg,rgba(201,151,58,.08) 0%,var(--bg-2) 100%);border:1px solid var(--line-2);border-radius:14px;text-align:center}
-.result-stat{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-family:monospace;letter-spacing:-.02em;margin-bottom:10px;line-height:1.05}
-.result-label{font-size:13px;color:var(--muted);line-height:1.5;letter-spacing:.02em}
-.proof-images{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
-.proof-figure{margin:0;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.proof-figure img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
-.proof-figure figcaption{padding:18px 22px;font-size:13px;color:var(--gold-2);letter-spacing:.04em;text-align:center;font-weight:600}
-.proof-disclaimer{margin-top:24px;padding:16px 22px;border:1px dashed var(--line-2);border-radius:10px;font-size:13px;color:var(--muted);text-align:center;letter-spacing:.02em}
-.proof-disclaimer strong{color:var(--gold-2);text-transform:uppercase;letter-spacing:.12em;font-size:11px}
-@media(max-width:768px){.results-grid{grid-template-columns:1fr 1fr}.proof-images{grid-template-columns:1fr}.result-stat{font-size:28px}}
-.reveal{opacity:0;transform:translateY(30px);transition:.8s}
-.reveal.in{opacity:1;transform:translateY(0)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--bg-deep:#050506;--bg-elev:#0e0e10;--bg-card:rgba(20,20,24,0.65);--gold:#d4af6c;--gold-bright:#ecc88a;--text-primary:#ece9e3;--text-secondary:#a09c93;--text-muted:#6c685f;--border:rgba(212,175,108,0.16);--border-strong:rgba(212,175,108,0.4);--accent-soft:rgba(212,175,108,0.08);--loss-red:#dc4040;--loss-red-bright:#ff5c5c;--loss-soft:rgba(220,64,64,0.08);--loss-border:rgba(220,64,64,0.35)}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-deep);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 15% 5%,rgba(212,175,108,0.07),transparent 45%),radial-gradient(circle at 85% 85%,rgba(212,175,108,0.05),transparent 45%);pointer-events:none;z-index:0}
+  .container{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .container-narrow{max-width:820px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
+  nav{position:fixed;top:0;left:0;right:0;padding:16px 0;background:rgba(5,5,6,0.85);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);z-index:100}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1180px;margin:0 auto;padding:0 28px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;letter-spacing:0.04em}
+  .nav-cta{padding:9px 22px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease}
+  .nav-cta:hover{background:var(--gold-bright);transform:translateY(-1px)}
+  .hero{padding:130px 0 60px;text-align:center}
+  .eyebrow{display:inline-block;padding:8px 18px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:32px}
+  .hero h1{font-size:clamp(38px,5.5vw,62px);line-height:1.05;margin-bottom:18px;color:var(--text-primary);max-width:900px;margin-left:auto;margin-right:auto;text-wrap:balance}
+  .hero h2{font-size:clamp(20px,2.4vw,26px);font-weight:400;color:var(--gold-bright);margin-bottom:36px;font-style:italic;max-width:780px;margin-left:auto;margin-right:auto;text-wrap:balance}
+  .hero h2 em{color:var(--gold);font-style:italic}
+  .cta-primary{display:inline-block;padding:18px 40px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 12px 30px rgba(212,175,108,0.2)}
+  .cta-primary:hover{background:var(--gold-bright);transform:translateY(-2px)}
+  .brand-side-note{margin-top:30px;font-size:12px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em;max-width:680px;margin-left:auto;margin-right:auto}
+  section{padding:60px 0}
+  .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .section-title{font-size:clamp(30px,4vw,46px);margin-bottom:18px;max-width:880px}
+  .section-title em{color:var(--gold);font-style:italic;font-weight:400}
+  .section-sub{font-size:17px;color:var(--text-secondary);max-width:780px;margin-bottom:40px;line-height:1.65}
+  .section-sub strong{color:var(--gold-bright);font-weight:600}
+  .overview-prose p{font-size:17px;color:var(--text-secondary);max-width:780px;margin-bottom:14px;line-height:1.7}
+  .overview-prose strong{color:var(--text-primary);font-weight:600}
+  .overview-prose em{color:var(--gold-bright);font-style:italic}
+  .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-top:32px}
+  .stat-item{text-align:center;padding:0 16px;border-right:1px solid var(--border)}
+  .stat-item:last-child{border-right:0}
+  .stat-num{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold);font-weight:600;line-height:1;margin-bottom:8px}
+  .stat-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted)}
+  @media(max-width:880px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:18px;border-bottom:0}.stat-item{border-right:0;border-bottom:1px solid var(--border);padding:16px 8px}.stat-num{font-size:26px}}
+  .bot-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-top:32px}
+  .bot-card{padding:36px 32px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;backdrop-filter:blur(12px)}
+  .bot-card .impact-tag{display:inline-block;padding:5px 12px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:2px;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .bot-card .num{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--gold);font-weight:600;line-height:1;display:inline-block;margin-right:14px;vertical-align:baseline}
+  .bot-card h3{font-size:23px;color:var(--text-primary);display:inline-block;vertical-align:baseline;max-width:calc(100% - 70px)}
+  .bot-card p{color:var(--text-secondary);font-size:15px;line-height:1.7;margin-top:14px;margin-bottom:14px}
+  .cost-callout{margin-top:18px;padding:18px 22px;background:var(--loss-soft);border-left:3px solid var(--loss-red);border-radius:2px;line-height:1.65}
+  .cost-callout .cost-label{display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--loss-red-bright);margin-bottom:8px;font-weight:600}
+  .cost-callout p{color:#d8a8a8;font-size:14px;margin:0;line-height:1.7}
+  .cost-callout strong{color:var(--loss-red-bright);font-weight:600}
+  .future-pace{margin-top:14px;padding-top:14px;border-top:1px solid rgba(220,64,64,0.18);font-size:13px;color:#e5b3b3;font-style:italic;line-height:1.65}
+  .future-pace strong{color:var(--loss-red-bright);font-weight:600;font-style:normal}
+  .future-pace .pace-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--loss-red-bright);font-weight:600;font-style:normal;display:inline-block;margin-right:6px}
+  .bot-card .impact{margin-top:18px;padding-top:18px;border-top:1px solid var(--border);font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-bright);font-style:italic;line-height:1.5}
+  .deliverable-featured{margin-top:32px;margin-bottom:18px;padding:0;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;backdrop-filter:blur(8px);overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;gap:0;transition:all 0.3s ease;text-decoration:none}
+  @media(max-width:760px){.deliverable-featured{grid-template-columns:1fr}}
+  .deliverable-featured:hover{transform:translateY(-2px)}
+  .deliverable-featured .featured-thumb-wrap{position:relative;overflow:hidden;border-right:1px solid var(--border);min-height:240px;background:linear-gradient(135deg,#0e0e10,#050506)}
+  @media(max-width:760px){.deliverable-featured .featured-thumb-wrap{border-right:0;border-bottom:1px solid var(--border);min-height:200px}}
+  .deliverable-featured .featured-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(circle at center,rgba(212,175,108,0.12),transparent 60%)}
+  .deliverable-featured .featured-placeholder .pl-eyebrow{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600}
+  .deliverable-featured .featured-placeholder .pl-title{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-primary);line-height:1.3;max-width:280px}
+  .deliverable-featured .featured-placeholder .pl-title em{color:var(--gold);font-style:italic}
+  .deliverable-featured .featured-overlay{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.85));font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);text-align:center;font-weight:600}
+  .deliverable-featured .featured-info{padding:32px 30px;display:flex;flex-direction:column;justify-content:center}
+  .deliverable-featured .tag{display:inline-block;padding:4px 12px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:14px;align-self:flex-start}
+  .deliverable-featured h3{font-size:26px;margin-bottom:12px;color:var(--text-primary);font-weight:500}
+  .deliverable-featured p{color:var(--text-secondary);font-size:14px;line-height:1.7;margin-bottom:18px}
+  .deliverable-featured .view-link{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-top:1px solid var(--border);padding-top:14px;margin-top:auto;align-self:flex-start;width:100%}
+  .deliverable-featured:hover .view-link{color:var(--gold-bright)}
+  .deliverables-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;align-items:start;grid-auto-rows:min-content}
+  @media(max-width:900px){.deliverables-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.deliverables-grid{grid-template-columns:1fr}}
+  .del-card{padding:26px 22px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;backdrop-filter:blur(8px);transition:all 0.3s ease;display:flex;flex-direction:column}
+  .del-card:hover{border-color:var(--border-strong);transform:translateY(-2px)}
+  .del-card .tag{display:inline-block;padding:3px 10px;background:var(--accent-soft);border:1px solid var(--border);border-radius:2px;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;align-self:flex-start}
+  .del-card h3{font-size:19px;margin-bottom:10px;color:var(--text-primary);font-weight:500}
+  .del-card p{color:var(--text-muted);font-size:13px;line-height:1.55;margin-bottom:16px;flex-grow:1}
+  .del-card a{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
+  .del-card a:hover{color:var(--gold-bright)}
+  .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px;max-width:1080px;margin-left:auto;margin-right:auto}
+  @media(max-width:760px){.comparison-grid{grid-template-columns:1fr}}
+  .comp-col{padding:32px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
+  .comp-col.now{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
+  .comp-col .comp-label{display:block;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-weight:600}
+  .comp-col h3{font-size:21px;margin-bottom:18px;color:var(--text-primary)}
+  .comp-col ul{list-style:none;padding:0;margin:0}
+  .comp-col li{padding:9px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border);line-height:1.55;display:flex;gap:10px}
+  .comp-col li:last-child{border-bottom:0}
+  .comp-col li::before{content:"\2713";color:var(--gold);font-weight:bold;flex-shrink:0}
+  .comp-col.now li::before{color:var(--gold-bright)}
+  .comp-col.future li::before{content:"\2192";color:var(--gold)}
+  .phases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:32px}
+  @media(max-width:760px){.phases-grid{grid-template-columns:1fr}}
+  .phase-card{padding:30px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;display:flex;flex-direction:column}
+  .phase-card.first{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
+  .phase-card .phase-meta{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+  .phase-card .phase-name{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);text-transform:uppercase;letter-spacing:0.16em;font-weight:600}
+  .phase-card .phase-weeks{font-size:11px;color:var(--text-muted);letter-spacing:0.12em;text-transform:uppercase}
+  .phase-card.first .phase-weeks{color:var(--gold-bright);font-weight:600}
+  .phase-card h3{font-size:22px;margin-bottom:14px;color:var(--text-primary)}
+  .phase-card ul{list-style:none;padding:0;margin:0;flex-grow:1}
+  .phase-card li{padding:7px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border);line-height:1.5}
+  .phase-card li:last-child{border-bottom:0}
+  .phase-card li::before{content:"\00B7";color:var(--gold);margin-right:10px;font-weight:bold}
+  .phase-card .revenue-cta{display:inline-flex;align-items:center;margin-top:16px;padding:12px 18px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:2px;color:var(--gold-bright);font-size:13px;font-weight:600;letter-spacing:0.04em;text-decoration:none;transition:all 0.3s ease}
+  .phase-card .revenue-cta:hover{background:var(--gold);color:var(--bg-deep)}
+  .phase-card .arrow{margin-left:6px}
+  .creds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
+  @media(max-width:760px){.creds-grid{grid-template-columns:1fr}}
+  .cred-card{padding:32px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
+  .cred-card.headline-result{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
+  .cred-headline{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);font-weight:600;line-height:1.1;margin-bottom:8px}
+  .cred-meta{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px}
+  .cred-detail{font-size:14px;color:var(--text-secondary);line-height:1.7}
+  .cred-detail strong{color:var(--gold-bright);font-weight:600}
+  .proof-callout{margin-top:44px;text-align:center;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:22px}
+  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1080px;margin:0 auto}
+  @media(max-width:760px){.proof-grid{grid-template-columns:1fr}}
+  .proof-card{padding:18px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;text-align:center}
+  .proof-card img{width:100%;height:auto;border-radius:2px;border:1px solid var(--border);margin-bottom:14px}
+  .proof-caption{font-size:13px;color:var(--text-secondary);line-height:1.5}
+  .proof-caption strong{color:var(--gold-bright);font-weight:600}
+  .trust-strip{margin-top:36px;padding:22px 0;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .trust-label{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;display:block}
+  .trust-clients{font-size:13px;color:var(--text-secondary);letter-spacing:0.04em}
+  .trust-clients .sep{margin:0 10px;color:var(--text-muted)}
+  .ownership-line{margin-top:18px;text-align:center;font-size:13px;color:var(--text-muted);font-style:italic;max-width:680px;margin-left:auto;margin-right:auto;line-height:1.7}
+  .client-quote{margin-top:36px;padding:28px 32px;background:var(--accent-soft);border-left:3px solid var(--gold);border-radius:2px;max-width:780px;margin-left:auto;margin-right:auto}
+  .client-quote p{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--text-primary);font-style:italic;line-height:1.5;margin-bottom:10px}
+  .client-quote .attribution{font-size:12px;color:var(--gold);letter-spacing:0.08em}
+  .cta-section{text-align:center;padding:60px 0}
+  .cta-section h2{margin-bottom:22px;max-width:720px;margin-left:auto;margin-right:auto}
+  .cta-section p{color:var(--text-secondary);font-size:17px;max-width:580px;margin:0 auto 36px;line-height:1.6}
+  .cta-buttons{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:center}
+  .cta-secondary-link{color:var(--text-secondary);font-size:14px;text-decoration:underline;text-decoration-color:var(--border-strong)}
+  .cta-secondary-link:hover{color:var(--gold)}
+  footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-muted);font-size:13px}
+  footer .signoff{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-secondary);margin-bottom:14px;max-width:680px;margin-left:auto;margin-right:auto}
+  footer .meta{font-size:12px;color:var(--text-muted);letter-spacing:0.04em}
+  footer .disclaimer{margin-top:14px;font-size:11px;color:var(--text-muted);font-style:italic;max-width:780px;margin-left:auto;margin-right:auto;line-height:1.6}
 </style>
 </head>
 <body>
 <nav>
-<div class="container nav-inner">
+<div class="nav-inner">
 <div class="logo">AG1 Consulting</div>
-<a href="https://calendly.com/ag-copy/call-with-andrei" class="nav-cta" target="_blank">Book A Call</a>
+<a href="#book" class="nav-cta">Next Step</a>
 </div>
 </nav>
 
 <section class="hero">
 <div class="container">
-<div class="eyebrow reveal">Built For Jamil Damji</div>
-<h1 class="reveal">Built For <em>AstroFlipping</em><br>AG1 Consulting</h1>
-<p class="reveal">~250K YouTube subscribers. ~185K Instagram. KeyGlee operating in 100+ markets. Three seasons co-hosting A&E's Triple Digit Flip. The Accelerator at $997 is selling steady, the Executive tier sits unpriced behind a strategy call, and the ladder above both of them is wide open. The audience trusts you. The premium tier is not yet built.</p>
-<div class="meta-grid reveal">
-<div class="meta-item"><div class="meta-label">YouTube subs</div><div class="meta-value">~250K</div></div>
-<div class="meta-item"><div class="meta-label">Instagram</div><div class="meta-value">~185K</div></div>
-<div class="meta-item"><div class="meta-label">Lifetime deal volume</div><div class="meta-value">~$1B</div></div>
-<div class="meta-item"><div class="meta-label">Cohort tier opportunity</div><div class="meta-value">$540K+/yr</div></div>
-</div>
-<div class="hero-cta-row reveal">
-<a href="https://andrei170.github.io/jamil-damji-mastermind/" target="_blank" class="cta-primary" style="padding:18px 40px;font-size:16px;border-radius:12px;box-shadow:0 12px 40px rgba(201,151,58,.3)">See The Live Demo →</a>
-<a href="https://calendly.com/ag-copy/call-with-andrei" target="_blank" class="cta-outline">Book A Call</a>
-</div>
+<div class="eyebrow">For Jamil Damji - Funnel Infrastructure + Install</div>
+<h1>AG1 Prepared for Jamil - Four Pieces</h1>
+<h2>Funnel infrastructure between Wholesale Hotline traffic and the existing Astro Flipping mentorship, <em>installed in less than 7 days</em></h2>
+<a href="https://andrei170.github.io/jamil-damji-landing/" class="cta-primary">View The Sample Enrolment Page &rarr;</a>
+<p class="brand-side-note">Side note, built in AG1 brand colours since astroflipping.com is a Stripe-styled checkout flow without strong brand palette signal, jdamji.com is photo-led, and keyglee.com reads as a corporate-real-estate blue-on-white. Brand-colour lock is one of the small Day-1 fixes once you confirm the Astro Flipping palette.</p>
 </div>
 </section>
 
-<section>
-<div class="container-narrow"><h2 class="reveal">Why This Page Exists</h2>
-<div class="prose reveal">
-<p>You've already done the hard part. Most operators in real-estate education don't have a national wholesaling brokerage operating in 100+ markets, three seasons of A&E credibility, and a community built on the "everyone eats" ethos in a niche notorious for shark behaviour. You do.</p>
-<p>The AstroFlipping Accelerator sits at $997 on astroflipping.com/dtc-checkout. Direct purchase, monthly coaching, lifetime access framing. The Executive tier sits at the $5,800-$7,500 mark per third-party reviewer aggregators, gated behind a "Strategy Session" booking and not pre-priced on the public homepage. YouTube ships across the @JamilDamji channel at <strong>~250K subscribers</strong> and the IG @jdamji at ~185K. KeyGlee is the operator brand underneath all of it, the disposition network running the actual deals, the moat no other wholesaler-educator owns.</p>
-<p>So this page is not a "here's how to build a real-estate education brand" pitch. You're past that.</p>
-<blockquote>"Real estate is a relationship business."<span class="quote-attr">- Jamil Damji, recurring brand line</span></blockquote>
-<p>That positioning is the moat. The pitch this page makes is that the ladder above the Accelerator has unfilled tiers, and three specific funnel leak points are observable from outside.</p>
-<p>This page is the version that lands when the brand is already built. After studying the public surfaces (jdamji.com, astroflipping.com/homepage, the /dtc-checkout flow, the YouTube channel cadence, the IG content, third-party review aggregators including RealEstateBees and Digital Course Detective, the A&E series, the comparable wholesaler-educator pricing benchmarks), three specific leak points are visible from outside. None of them are foundation-level. All three are the kind of revenue lift that compounds inside a brand already running at A&E national scale.</p>
-<p>And here's the strategic timing. The wholesaling-education category is now contested by every $497 TikTok wholesaler citing your KeyGlee dispositions back at you. The window for the operator who built the national brokerage, the A&E TV credibility, and the relationship-first positioning to capture the premium tier above all of them is open right now. <strong>Operators with brand-scale reach and operator-network access get to charge a different number than operators copying the niche.</strong></p>
-<p>The build below is sized for that. Conservative numbers. Phased over four months. Built around the funnel you already run, not against it.</p>
-<div class="signature">- Andrei | AG1 Consulting</div>
-</div>
-</div>
-</section>
-
-<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
+<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
 <div class="container">
-<div class="eyebrow reveal">The Leak Points</div>
-<h2 class="reveal">Three Places The Funnel Currently Underconverts</h2>
-<p class="section-sub reveal">All publicly observable. Nothing fabricated about backend systems we can't see.</p>
+<div class="section-eyebrow">The Four Pieces</div>
+<h2 class="section-title">Funnel infrastructure I would install, <em>ranked by revenue impact.</em></h2>
+<p class="section-sub">The mentorship offer exists. Astro Accelerator exists. Housing Alchemy and Energy of Money exist. KeyGlee operates as a separate national franchise business. What does not exist is the funnel infrastructure that connects Wholesale Hotline plus To The Moon plus YouTube plus IG traffic to the existing back-end offers. <strong>Full install ships in less than 7 days from kickoff.</strong> <strong>Money in the bank inside the first enrolment cycle after the install completes.</strong></p>
 
-<div class="gap-grid">
-<div class="gap-card reveal">
-<span class="gap-tag critical">Critical</span>
-<h3>No VSL Or Indoctrination Video On AstroFlipping Or jdamji.com</h3>
-<p>The astroflipping.com homepage runs static astronaut hero art with no embedded video above the fold. jdamji.com runs the founder photo and brand text, with two co-living YouTube videos buried below. There is no 8-12 minute walkthrough explaining the relationship-first wholesaling thesis, the KeyGlee operator network, the A&E credibility, or the difference between AstroFlipping and the free YouTube content. Cold traffic from <strong>~250K YouTube subscribers and ~185K IG followers</strong> arrives on a "Get Started" button or a "Schedule a Call" form with no bridge between the YouTube voice and the buy decision. The wholesaler-educators who convert at scale (Pace Morby with the embedded VSL on subto.com, Brent Daniels on talktopeople.com, Sean Terry's video-led Flip2Freedom funnel) all run a pre-purchase video layer between cold traffic and the offer. Yours is missing on both surfaces.</p>
-<div class="fix"><strong>The Lift</strong>An 8-12 minute homepage VSL filmed in your existing on-camera aesthetic, embedded above the fold on astroflipping.com and a matching shorter version on jdamji.com. Relationship-first opening, the "everyone eats" thesis, three Accelerator student case studies, the KeyGlee national dispositions explanation, the natural close into the $997 Accelerator or the strategy-session funnel. Lift compounds against every YouTube viewer, every IG bio click, and every podcast listener who searches the brand.</p></div>
+<div class="bot-grid">
+<div class="bot-card">
+<span class="impact-tag">Highest Revenue Lever</span>
+<div><span class="num">01</span><h3>No VSL On The Astro Flipping Enrolment Surface</h3></div>
+<p>astroflipping.com goes direct to a two-step Stripe checkout (Information then Payment). No video, no deal walkthrough, no pre-frame on what the seven modules teach, no monthly coaching call framing, no Elite Facebook Group framing. The audience that watched 40 hours of cold-call demos on Wholesale Hotline is handed a credit-card form. <strong>We build the custom 5-7 minute VSL filmed by you, embed it on a rebuilt astroflipping.com sales page (or a parallel funnel page if you want to leave the existing checkout untouched).</strong> Pre-frame the seven modules, the monthly coaching call with Jamil, the Elite Facebook Group, the Astro Accelerator intro tier as the on-ramp. Compounds every podcast view, every YouTube view, every IG bio-link tap that lands on the enrolment page.</p>
+<div class="cost-callout">
+<span class="cost-label">Cost of Waiting</span>
+<p>Roughly <strong>1-3 percentage-point conversion lift</strong> is the typical floor on adding a credible VSL to a direct-checkout flow. At your existing podcast and YouTube traffic, the low end of that range sits in the <strong>low-to-mid six-figure incremental enrolment range, compounding monthly.</strong></p>
+<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>Low-to-mid six-figure</strong> incremental Astro Flipping enrolment revenue never captured, with the gap widening as Wholesale Hotline distribution and YouTube subscriber base grow.</p>
 </div>
-
-<div class="gap-card reveal">
-<span class="gap-tag critical">Critical</span>
-<h3>No Tier Above The Executive Except Custom 1-On-1, And The Executive Is Opaque</h3>
-<p>The current ladder reads as $997 Accelerator, then a black-box upgrade to the Executive tier (priced at $5,800-$7,500 per third-party reviewer aggregators including RealEstateBees and Digital Course Detective, but not pre-priced or publicly laddered on astroflipping.com). Above that, nothing structured. Accelerator graduates who've closed their first 3-5 deals and are ready to build a market-level wholesaling operation have nowhere to go inside the brand except a private 1-on-1 conversation. The wholesaler-educators who run senior tiers above their flagship (Pace Morby's SubTo Mastermind at $12K-$19K, Sean Terry's mentorship escalation above the $997 Academy, Ryan Pineda's Future Flipper laddered ecosystem) all keep the senior tier visible and pre-priced. Yours is opaque, and the warmest list for it (Accelerator alumni who've closed deals) currently has no upgrade path.</p>
-<div class="fix"><strong>The Lift</strong>The Operator's Cohort. Quarterly intakes of 6-8 verified-active wholesalers at $20K-$25K per seat. Two-day in-person intake at the KeyGlee Phoenix HQ plus 90-day implementation cohort. Application-only with a 3-5 closed deals + active operation gate. KeyGlee disposition network access at operator-tier as the structural moat. Sells warm off the AstroFlipping alumni base. Produces case studies that compound back into AstroFlipping marketing.</div>
+<div class="impact">Fix - VSL on the Astro Flipping enrolment surface, 5-7 min custom film, rebuilt or parallel-funnel landing page. AG1 service mapping - VSL call funnel (primary AG1 service).</div>
 </div>
 
-<div class="gap-card reveal">
-<span class="gap-tag high">High Impact</span>
-<h3>No Dedicated Lead-Magnet Landing Capturing The Cold YouTube/IG/TikTok Audience</h3>
-<p>The newsletter opt-in on jdamji.com asks for an email with no stated incentive. AstroFlipping's homepage routes cold traffic straight to a $997 checkout or a "Strategy Session" booking. There is no dedicated /free, /cheatsheet, /masterclass, or /pdf landing page (jdamji.com/wholesale-blueprint or astroflipping.com/free) optimised purely for email capture from cold IG, TikTok, and YouTube traffic. The wholesaler-educators who scale email lists from social audiences (Pace Morby's free creative-finance masterclass funnel, Sean Terry's wholesaling cheat sheet, Brent Daniels' /free TTP resource) all run a single dedicated TOFU lead magnet page before the paid pitch. The slice of ~435K combined IG and YouTube followers who would convert into email currently bounces or lands on a $997 cold checkout.</p>
-<div class="fix"><strong>The Lift</strong>A dedicated jdamji.com/wholesale-blueprint landing page with a single conversion goal: email opt-in for a free Damji-branded wholesaling cheat sheet (or 3-video AstroFlipping Quick-Start sequence). IG bio link rewires to that single page. Segmented email infrastructure layered behind it: new-subscriber 8-email indoctrination flow into the Accelerator, behavioural trigger for free-video watchers, and re-engagement against unconverted opt-ins after 60 days. Captures the slice of ~435K combined IG + YouTube followers who would convert into email but currently see no incentive on the opt-in form.</div>
+<div class="bot-card">
+<span class="impact-tag">Fast Install</span>
+<div><span class="num">02</span><h3>No Qualification Scorecard Or Application Gate Before Stripe</h3></div>
+<p>The Astro Accelerator at the intro tier takes any card. The Astro Flipping full mentorship has no public application gate either. The Elite Facebook Group receives buyers without a pre-screen. <strong>A 12-question "Wholesaling Readiness Score" (current wholesaling experience, lead source mix, dispo channel, monthly deal volume, target volume, primary bottleneck. 0-100 score, 3-line bottleneck readout, email out, routing decision)</strong> turns currently-discarded mid-funnel traffic into segmented email. Buyers route to Astro Flipping mentorship, Astro Accelerator, Housing Alchemy, or Energy of Money based on which band they score into. 5-8 percent IG-to-email is realistic on this kind of high-intent wholesaling-curious audience. Several thousand incremental segmented subscribers in 90 days from existing IG plus YouTube plus podcast traffic.</p>
+<div class="cost-callout">
+<span class="cost-label">Cost of Waiting</span>
+<p>Roughly <strong>mid-four-figure to low-five-figure monthly opportunity cost</strong> in nurture-driven enrolment, compounding once the email asset is segmented. Every month the scorecard does not exist is a month where mid-funnel traffic that lands on jdamji.com browses Housing Alchemy or Energy of Money, signs up to the generic newsletter or exits, and is never tagged by intent.</p>
+<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>Mid-five-figure to low-six-figure</strong> incremental enrolment never captured, plus the email list is 6 months smaller and 6 months less-segmented than it should be when the next mentorship cycle opens.</p>
 </div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<div class="eyebrow reveal">Market Context</div>
-<h2 class="reveal">Where Operators At Your Tier Are Already Pricing</h2>
-<p class="section-sub reveal">Four peers running flagship-to-mastermind ladders in real-estate education. The senior tier is established. None of them publicly own a national wholesaling brokerage operating in 100+ markets with three seasons of A&E credibility.</p>
-
-<div class="market-table">
-<div class="market-row reveal">
-<div>
-<div class="market-name">Pace Morby (SubTo)</div>
-<div class="market-price">Core $7,800 · Standard $10,800 · Mastermind $12K-$19K</div>
-</div>
-<div class="market-note">Direct comp on operator profile and offer architecture. Morby is to creative finance what you are to wholesaling: relationship-led, brand-first, A&E-adjacent. SubTo runs free YouTube content into a paid course into an application-gated Mastermind tier with ride-alongs. Mastermind sits at $12K-$19K per RealEstateBees aggregated reports. Proves the $20K+ tier in real-estate education converts when the brand authority is operator-led. Your KeyGlee national dispositions network is structurally above what Morby owns on the disposition side.</div>
+<div class="impact">Fix - Wholesaling Readiness Score on ScoreApp / Typeform, application Typeform on Astro Flipping mentorship plus Housing Alchemy plus Energy of Money. AG1 service mapping - application funnel (Typeform + Calendly) + tech setup.</div>
 </div>
 
-<div class="market-row reveal">
-<div>
-<div class="market-name">Sean Terry (Flip2Freedom Academy)</div>
-<div class="market-price">Academy $997 base · Private Mentorship escalation</div>
+<div class="bot-card">
+<span class="impact-tag">Compound Friction</span>
+<div><span class="num">03</span><h3>Podcast And YouTube Traffic Does Not Capture Segmented Email Before Routing To Mentorship</h3></div>
+<p>The newsletter on jdamji.com captures one email field with no segmentation. The audience that lands looking for cold-call wholesaling gets the same newsletter as the audience that lands looking for co-living gets the same newsletter as the audience that lands looking for Energy of Money. The downstream send is broadcast, not segmented. The opt-out rate stays high, the click-through rate stays low, the revenue per subscriber stays under-realised. <strong>We install the GHL or ConvertKit segmentation plus SimpleTexting SMS sequences.</strong> Segmented welcome flow plus 7-touch pre-enrolment plus 4-touch post-application, all routed by which scorecard band the buyer came in through. Cross-sell sequences fire when the buyer's tags update. The newsletter on jdamji.com gets segmented at signup by a single dropdown ("which of these are you most interested in right now?") and routes accordingly.</p>
+<div class="cost-callout">
+<span class="cost-label">Cost of Waiting</span>
+<p>Every month the segmented email lane does not exist is a month where podcast and YouTube traffic gets converted at broadcast-newsletter rates rather than at segmented-nurture rates. The delta on a high-intent education audience is typically a <strong>2-3x lift in revenue per subscriber</strong> over a 90-day window once segmentation is in place.</p>
+<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>Mid-five-figure to low-six-figure</strong> in compounded nurture-driven enrolment never captured, plus the post-purchase upsell flow that should cross-sell Astro Accelerator buyers into Astro Flipping does not exist.</p>
 </div>
-<div class="market-note">Long-running comp on the $997 entry-tier model with a private mentorship escalation above it. Demonstrates the $997 SKU as the funnel entry point with the real margin sitting in the higher tier. Direct architectural parallel to AstroFlipping's $997 Accelerator + opaque Executive ladder, with the difference that Terry's senior tier is named and his ladder is publicly understood.</div>
-</div>
-
-<div class="market-row reveal">
-<div>
-<div class="market-name">King Khang (WTM Playbook)</div>
-<div class="market-price">~$1,997 base · Private coaching upsell</div>
-</div>
-<div class="market-note">Lower-priced flagship at $1,997, strong YouTube-funnel-to-paid conversion path your audience already mirrors. Proves the YouTube-first wholesaling-education category converts on a video-led front end. Khang's senior coaching tier is the upgrade slot Damji's $997 Accelerator buyer has no equivalent for.</div>
+<div class="impact">Fix - Segmented email plus SMS sequences via GHL / ConvertKit / SimpleTexting. AG1 service mapping - email + SMS sequences (primary AG1 service).</div>
 </div>
 
-<div class="market-row reveal">
-<div>
-<div class="market-name">Brent Daniels (TTP / Rhino Tribe)</div>
-<div class="market-price">Recurring monthly community + cohort coaching above</div>
+<div class="bot-card">
+<span class="impact-tag">Strategic Ceiling</span>
+<div><span class="num">04</span><h3>Four Brand Surfaces, No Unified Hub Between Them</h3></div>
+<p>Astro Flipping (astroflipping.com), Housing Alchemy (myhousealchemy.com), Energy of Money (jdamji.com), and KeyGlee (keyglee.com) live on four separate domains. The cross-sell motion between them is manual. The audience member who buys Astro Accelerator has no in-funnel route to Housing Alchemy or to Energy of Money. The KeyGlee buyer-list audience has no in-funnel route into Astro Flipping mentorship. <strong>We build the unified hub at a Jamil-owned domain (or jdamji.com subdomain)</strong> that surfaces Astro Flipping, Housing Alchemy, Energy of Money, the two podcasts, and the YouTube channel. The hub features the scorecard above the fold and routes by intent. KeyGlee stays separate as the franchise business and is referenced on the hub as authority signal only (national wholesaling franchise across 35-plus metros, since 2002 in real estate).</p>
+<div class="cost-callout">
+<span class="cost-label">Cost of Waiting</span>
+<p>Every month the hub does not exist is a month where Astro Accelerator buyers never see Housing Alchemy and Housing Alchemy buyers never see the Astro Flipping mentorship. The cross-brand cross-sell is the missing layer, and the lift on it is typically a <strong>low-to-mid percentage-point uplift on lifetime value per buyer</strong> once the routing is in place.</p>
+<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>Mid-five-figure to low-six-figure</strong> incremental cross-brand revenue never captured, plus the foundation for a paid-traffic line never gets built (you cannot run paid traffic at scale to four separate domains with no unified capture layer behind them).</p>
 </div>
-<div class="market-note">Closest comp on "trust-first wholesaling community" positioning. Recurring monthly community at the lower-mid tier with cohort-style coaching layered above. No publicly priced $20K+ tier from Daniels. Proves the wholesaling-community tier converts on subscription, leaves the $20K+ ceiling open for the operator with strongest brand authority. That's you.</div>
-</div>
-</div>
-
-<div class="market-callout reveal">
-Every name above runs a senior tier or pre-priced premium intake. $20K-$25K is achievable at parity with Morby's Mastermind anchor when the cohort is application-gated, capped at 6-8 verified-active wholesalers, and includes two days at the KeyGlee Phoenix HQ plus 90-day implementation plus disposition-network access. None of them publicly own <strong>a national wholesaling brokerage in 100+ markets, three seasons of A&E TV credibility, and the "everyone eats" relationship-first positioning</strong>. The Operator's Cohort is not invented. It's the slot the market already prices, just unfilled by you.
-</div>
-
-<div class="moat-callout reveal">
-<div class="moat-eyebrow">Your Moat, In One Sentence</div>
-<p>The relationship-first wholesaler with a national disposition network. Not "course wholesaling," not "TikTok wholesaling." <strong>The operator who built KeyGlee into 100+ markets, ran three seasons on A&E, and teaches an "everyone eats" model in a niche notorious for shark behaviour.</strong> Every newer operator launching a $497 wholesaling course is running variations of the aesthetic you publicly opted out of. The premium tier above all of them is not for someone copying the niche. It's for the operator who built the counter-positioning and owns the disposition network underneath it.</p>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<div class="eyebrow reveal">Asset Ownership</div>
-<h2 class="reveal">What Each YouTube-To-AstroFlipping Visitor Actually Produces</h2>
-<p class="section-sub reveal">Same YouTube traffic. Same IG audience. Different number of conversion events the asset triggers downstream once the ladder is built.</p>
-
-<div class="asset-table reveal">
-<div class="asset-row asset-header">
-<div></div>
-<div class="asset-col-label">Per visitor today</div>
-<div class="asset-col-label asset-built-label">Per visitor in this build</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Email captured</div>
-<div class="asset-val asset-today">Newsletter opt-in (no incentive)</div>
-<div class="asset-val asset-built">Yes (dedicated landing, segmented)</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Pre-purchase video bridge</div>
-<div class="asset-val asset-today">None above the fold</div>
-<div class="asset-val asset-built">8-12 min VSL on AstroFlipping + jdamji.com</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Accelerator upsell path</div>
-<div class="asset-val asset-today">Direct $997 checkout</div>
-<div class="asset-val asset-built">Indoctrination + Accelerator buy-in</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Executive tier visibility</div>
-<div class="asset-val asset-today">Opaque, behind strategy call</div>
-<div class="asset-val asset-built">Pre-priced and laddered publicly</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Premium cohort path</div>
-<div class="asset-val asset-today">None</div>
-<div class="asset-val asset-built">Operator's Cohort live</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">Post-Accelerator continuity</div>
-<div class="asset-val asset-today">Renew or churn</div>
-<div class="asset-val asset-built">Cohort ascension or alumni community</div>
-</div>
-<div class="asset-row">
-<div class="asset-cat">After non-conversion</div>
-<div class="asset-val asset-today">Generic IG broadcast</div>
-<div class="asset-val asset-built">Score-banded nurture by deal-stage</div>
-</div>
-</div>
-</div>
-</section>
-
-<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
-<div class="container">
-<div class="eyebrow reveal">The System</div>
-<h2 class="reveal">Four Levers We'd Pull With You</h2>
-<p class="section-sub reveal">Optimisation and ascension, not introduction. Every lever plugs into infrastructure you already operate. Nothing here asks you to rebuild the Accelerator, rebrand AstroFlipping, or move off your current checkout.</p>
-
-<div class="phase-block reveal">
-<div class="phase-num">Lever 01<span class="month">Month 1</span></div>
-<div class="phase-content">
-<h3>Lead-Magnet Page + AstroFlipping VSL + Segmented Nurture</h3>
-<p style="margin-bottom:14px">First month builds the three missing pieces of the front-end funnel: the dedicated /wholesale-blueprint landing page, the 8-12 minute VSL above the fold on astroflipping.com, and the segmented email infrastructure behind both. All three compound off audiences and traffic you already produce, no new acquisition spend yet.</p>
-<ul>
-<li>Dedicated jdamji.com/wholesale-blueprint landing page built: single conversion goal, email opt-in for a Damji-branded wholesaling cheat sheet or 3-video AstroFlipping Quick-Start sequence, IG bio link rewired to it</li>
-<li>8-12 minute VSL filmed and embedded above the fold on astroflipping.com: relationship-first opening, "everyone eats" thesis, three Accelerator case studies, KeyGlee national dispositions context, close into Accelerator</li>
-<li>Mirror short-form VSL on jdamji.com home above the existing co-living embeds, routing to the same Accelerator funnel</li>
-<li>Segmented email infrastructure: new-subscriber 8-email indoctrination flow into the Accelerator, behavioural trigger for free-video watchers, re-engagement flow against unconverted opt-ins at 60 days</li>
-<li>Cross-platform tracking layer: YouTube → /wholesale-blueprint conversion rate, IG bio → email capture rate, /wholesale-blueprint → Accelerator attach rate, all in one dashboard</li>
-<li>Score-banded nurture for opt-ins who don't buy Accelerator in 30 days: 8-12 emails segmented by their stated deal-stage (no deals, first deal, scaling), each with the right Accelerator lesson tied to their stage</li>
-<li>A/B test instrumentation built in from day one so we measure the lift, not hope for it</li>
-</ul>
-<div class="rev-line"><strong>Outcome</strong>Two new revenue lines (email-captured Accelerator buyers from /wholesale-blueprint plus VSL-converted Accelerator buyers from existing astroflipping.com traffic) layered onto the existing $997 funnel. Conservative incremental lift compounds inside the funnel from week four onward, scaling further as Levers 02-04 ship.</div>
-</div>
-</div>
-
-<div class="phase-block reveal">
-<div class="phase-num">Lever 02<span class="month">Month 2</span></div>
-<div class="phase-content">
-<h3>Premium Tier Launch (The Operator's Cohort)</h3>
-<p style="margin-bottom:14px">Lever 02 introduces the $20K-$25K Operator's Cohort, positioned as the uprated tier above the Executive. Application-only, capped at 6-8 verified-active wholesalers per intake, quarterly cadence. Sold first to AstroFlipping alumni who've closed their first 3-5 deals and are ready to build a market-level operation. The first cohort lands the largest single revenue line in the build.</p>
-<ul>
-<li>Operator's Cohort positioning, sales page, and application flow built and live</li>
-<li>Application screening rubric calibrated to "AstroFlipping alumni or equivalent, 3-5 closed deals, active wholesaling operation, ready to scale to a market-level brokerage"</li>
-<li>90-day post-event implementation programme structured (bi-weekly group calls plus 1-on-1 strategic access plus KeyGlee disposition network access at operator-tier)</li>
-<li>Outreach campaign to AstroFlipping alumni who've cleared the curriculum and want a senior tier</li>
-<li>First cohort dates locked at the KeyGlee Phoenix HQ, run-of-show handled by the build team</li>
-<li>Two-day in-person intake, AV, catering, breakouts, including a live deal-room session day-of with the KeyGlee acquisitions team</li>
-<li>Capstone deliverable each cohort member walks home with: a market-level wholesaling operation blueprint plus 90-day execution plan tied to their specific market</li>
-</ul>
-<div class="rev-line"><strong>Revenue Model</strong>6-8 seats per cohort @ $20-$25K · 4 cohorts/year · Conservative incremental: ~$540-$800K/yr. Sells warm off the AstroFlipping alumni base.</div>
-</div>
-</div>
-
-<div class="phase-block reveal">
-<div class="phase-num">Lever 03<span class="month">Month 3</span></div>
-<div class="phase-content">
-<h3>Paid Acquisition Layer On Top Of Organic</h3>
-<p style="margin-bottom:14px">By Lever 03 the funnel converters are live (Lever 01) and the premium tier is producing case studies and revenue (Lever 02). Now the Lever 03 paid layer compounds against a funnel that converts measurably better than it did 90 days ago. Meta retargeting and YouTube pre-roll primary against your own audiences. LinkedIn for the Operator's Cohort tier specifically.</p>
-<ul>
-<li>Paid Meta retargeting against YouTube channel viewers, IG follower base, and existing email list (warmest possible audiences)</li>
-<li>YouTube pre-roll against your own channel subscribers and IG follower base</li>
-<li>LinkedIn campaign for the Operator's Cohort tier (active-wholesaler audience, not consumer)</li>
-<li>Bank of 20-30 static and video ads written in your voice, shot in your existing on-camera aesthetic</li>
-<li>Daily creative iteration, weekly performance review, monthly budget reallocation</li>
-<li>UTM and pipeline attribution layered into the dashboard from Lever 01</li>
-</ul>
-<div class="rev-line"><strong>Revenue Model</strong>Compounds Lever 01 lift. Conservative ROAS 3-5x on retargeting against YouTube viewer / Accelerator buyer audiences. Spend scales with measured conversion, not hope.</div>
-</div>
-</div>
-
-<div class="phase-block reveal">
-<div class="phase-num">Lever 04<span class="month">Month 4+</span></div>
-<div class="phase-content">
-<h3>Retention + Ascension Loop</h3>
-<p style="margin-bottom:14px">Lever 04 closes the loop. The Accelerator alumni community produces recurring revenue, referrals seed Cohort intake, and the retention layer feeds back into Accelerator renewals and Cohort applications. By month six the system runs on its own compound, with the build team in monitoring rather than build mode.</p>
-<ul>
-<li>Alumni community for Accelerator graduates ($97-$197/mo) with monthly programming, peer deal-room channels, and Jamil access on a published cadence</li>
-<li>Referral and affiliate structure for past Accelerator alumni to bring in next-cohort applicants and Accelerator renewals</li>
-<li>Repeat-buyer flow back into Cohort for alumni who've outgrown the Accelerator + Executive curriculum</li>
-<li>Quarterly "state of the wholesaling market" content drop to the alumni community, repurposed publicly afterwards</li>
-<li>Lifecycle email infrastructure across Accelerator, Executive, Cohort, alumni, and KeyGlee partner segments</li>
-</ul>
-<div class="rev-line"><strong>Revenue Model</strong>Recurring monthly community at scale plus repeat-buyer revenue. Ramps month four onward, becomes the durability layer underneath the cohort revenue.</div>
+<div class="impact">Fix - Unified hub at Jamil-owned domain plus GHL CRM consolidation. AG1 service mapping - landing page (primary AG1 service) + tech setup (GHL, Stripe, Zapier).</div>
 </div>
 </div>
 </div>
@@ -436,266 +234,268 @@ Every name above runs a senior tier or pre-priced premium intake. $20K-$25K is a
 
 <section>
 <div class="container">
-<div class="eyebrow reveal">Revenue Projection</div>
-<h2 class="reveal">What This Adds On Top Of What You Already Run</h2>
-<p class="section-sub reveal">Incremental year-one lift, layered on top of current Accelerator and Executive revenue. None of these numbers cannibalise existing income lines.</p>
+<h2 class="section-title">Four pieces. <em>One install plan to ship them.</em></h2>
+<div class="overview-prose">
+<p>Spent the morning re-studying the funnel, <strong>@jdamji</strong> on IG plus <strong>@astroflipping</strong> and <strong>@astroflippin</strong>, the <strong>@jamildamji</strong> YouTube channel, the Wholesale Hotline catalogue, the To The Moon podcast, jdamji.com (Housing Alchemy plus Energy of Money plus Schedule a Call plus newsletter), astroflipping.com (Astro Accelerator direct-to-checkout), and keyglee.com (55 franchises across 35 metros). Four pieces of funnel infrastructure I would install in the first 7 days, ranked by revenue impact. <strong>Full install ships in less than 7 days from kickoff. Money in the bank inside the first enrolment cycle after the install completes.</strong> Seven deliverables already built so you can read at your own pace.</p>
+<p>The Astro Flipping mentorship is built (seven modules, monthly coaching call with Jamil, Elite Facebook Group, multi-year operating history). KeyGlee is built (national franchise across 35-plus metros, since 2002 in real estate). The catalogue is doing the marketing job. What is missing is the funnel infrastructure layer between the catalogue traffic and the existing back-end offers. AG1 installs four pieces that map directly to the service catalog (VSL call funnel, application funnel, email plus SMS sequences, landing page plus GHL CRM). Results vary, dependent on existing enrolment baseline, podcast and YouTube traffic, and operator inputs.</p>
+</div>
+<div class="stats-grid">
+<div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Pieces Mapped</div></div>
+<div class="stat-item"><div class="stat-num">7</div><div class="stat-label">Deliverables</div></div>
+<div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Phases</div></div>
+<div class="stat-item"><div class="stat-num">&lt; 7 Days</div><div class="stat-label">Full Install</div></div>
+<div class="stat-item"><div class="stat-num">Day 7</div><div class="stat-label">Revenue Live</div></div>
+</div>
+</div>
+</section>
 
-<div class="rev-table reveal">
-<div class="rev-row">
-<div class="rev-stream"><strong>Lever 01: Lead-magnet page + VSL + segmented nurture</strong>Email-captured Accelerator buyers from /wholesale-blueprint plus VSL-converted Accelerator buyers from existing astroflipping.com traffic</div>
-<div class="rev-amount">~$180,000+</div>
+<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
+<div class="container">
+<div class="section-eyebrow">The Deliverables</div>
+<h2 class="section-title">Everything I built for you, <em>in one place.</em></h2>
+<p class="section-sub">Seven deliverables. The working assets are ready to install; the strategy docs explain the why. Sample Astro Flipping Enrolment Landing Page is the headliner, everything else feeds it.</p>
+
+<a href="https://andrei170.github.io/jamil-damji-landing/" target="_blank" class="deliverable-featured">
+<div class="featured-thumb-wrap">
+<div class="featured-placeholder">
+<span class="pl-eyebrow">Astro Flipping Enrolment - Sample Landing</span>
+<span class="pl-title">Wholesale Hotline is the pre-sell. <em>The seven modules are the install.</em></span>
 </div>
-<div class="rev-row">
-<div class="rev-stream"><strong>Lever 02: The Operator's Cohort</strong>4 cohorts/yr · 6 seats avg @ $22,500</div>
-<div class="rev-amount">$540,000</div>
+<div class="featured-overlay">Click to View Live Preview</div>
 </div>
-<div class="rev-row">
-<div class="rev-stream"><strong>Levers 03 + 04: Paid Layer + Alumni Community</strong>Ramps month 4-6 onward</div>
-<div class="rev-amount">upside</div>
+<div class="featured-info">
+<span class="tag">Working Asset</span>
+<h3>Sample Enrolment Landing Page</h3>
+<p>HTML, mobile-responsive, ready to deploy. The Astro Flipping enrolment surface with VSL embed and Typeform application live. This is the headliner of the package, everything else feeds it.</p>
+<span class="view-link">View Full Page &rarr;</span>
 </div>
-<div class="rev-total">
-<div class="rev-total-label">Year-One Floor (Incremental)</div>
-<div class="rev-total-amount">~$720K</div>
-</div>
-<div class="rev-caveat"><strong>How we got here</strong>Conservative math: a /wholesale-blueprint landing page captures email at meaningfully higher rates than a no-incentive newsletter form, and an 8-12 min VSL above the fold on astroflipping.com lifts cold-traffic checkout conversion against the current text-led page. 6-seat first cohort sits at the lower end of the $20-$25K range. Real numbers calibrate against your actual funnel volume on the call.</div>
+</a>
+
+<div class="deliverables-grid">
+<div class="del-card">
+<span class="tag">Phase 1</span>
+<h3>VSL Preview Script</h3>
+<p>90-second preview cut plus production notes plus the full 5-7 minute custom landing-page VSL spec for Day 1-3 of install.</p>
+<a href="vsl-preview.html" target="_blank">Open &rarr;</a>
 </div>
 
-<div class="rev-note reveal">
-This is <strong>incremental on top of</strong> your existing Accelerator and Executive revenue, not a replacement of either. Lever 01 compounds your current funnel through better front-end conversion. The Operator's Cohort is a tier you don't currently sell publicly. The paid layer and alumni community are durability layers that ramp into year two.
+<div class="del-card">
+<span class="tag">Phase 1+2</span>
+<h3>Email Sequences</h3>
+<p>Cold-outreach sequence to you, plus the production assets - 14-day welcome flow, 7-touch pre-enrolment, 4-touch post-application, SMS layer.</p>
+<a href="email-sequence.html" target="_blank">Open &rarr;</a>
 </div>
 
-<div class="rev-table premium-table reveal">
-<div class="premium-eyebrow">Premium-Only Ceiling</div>
-<p style="color:var(--muted);font-size:15px;margin-bottom:20px;max-width:none">Same plan, dialled up. Higher Lever 01 conversion lift, premium-tier Cohort pricing, paid layer running at scale by month six.</p>
-<div class="rev-row">
-<div class="rev-stream"><strong>Lever 01 (premium lift)</strong>VSL conversion rate at the upper end · /wholesale-blueprint email capture at scale · deeper Accelerator attach rate</div>
-<div class="rev-amount">~$420,000+</div>
+<div class="del-card">
+<span class="tag">Phase 3</span>
+<h3>Content Strategy</h3>
+<p>Three content lanes (Module Drops, Long-Form Modules on YouTube and Wholesale Hotline, Operator Reads on LinkedIn). 40-hook bank. Photoshoot brief.</p>
+<a href="content-strategy.html" target="_blank">Open &rarr;</a>
 </div>
-<div class="rev-row">
-<div class="rev-stream"><strong>The Operator's Cohort (premium)</strong>4 cohorts/yr · 8 seats avg @ $25,000</div>
-<div class="rev-amount">$800,000</div>
+
+<div class="del-card">
+<span class="tag">Lead Doc</span>
+<h3>Bottleneck Analysis</h3>
+<p>Four pieces of funnel infrastructure I would install. Year-1 floor math. Stacked outcome table. Mapped to AG1 service catalog.</p>
+<a href="bottleneck-analysis.html" target="_blank">Open &rarr;</a>
 </div>
-<div class="rev-row">
-<div class="rev-stream"><strong>Alumni Community + Paid Layer (mature)</strong>Months 6-12 ramp</div>
-<div class="rev-amount">$220,000+</div>
+
+<div class="del-card">
+<span class="tag">Foundation</span>
+<h3>Copy Strategy</h3>
+<p>Voice, brand pillars, avatars, headline bank, the framing AG1 will write to.</p>
+<a href="copy-strategy.html" target="_blank">Open &rarr;</a>
 </div>
-<div class="rev-total">
-<div class="rev-total-label">Year-One Ceiling (Incremental)</div>
-<div class="rev-total-amount">~$1.4M</div>
+
+<div class="del-card">
+<span class="tag">Architecture</span>
+<h3>Funnel Blueprint</h3>
+<p>Full funnel diagram, phase mapping, tech stack, integration points, risk plus mitigation.</p>
+<a href="funnel-blueprint.html" target="_blank">Open &rarr;</a>
 </div>
-<div class="rev-caveat"><strong>How we got here</strong>Premium math: stronger VSL lift (better script, sharper segmentation), 8-seat cohort at the top of the $25K range, alumni community at 1,000-1,500 paying members by month 12. Real numbers calibrate to your actual conversion baselines on the call.</div>
+
+<div class="del-card">
+<span class="tag">Source</span>
+<h3>Research File</h3>
+<p>Identity, audience, current offer stack across four brand surfaces, the missing funnel-infrastructure read, sensitivities.</p>
+<a href="research.html" target="_blank">Open &rarr;</a>
+</div>
 </div>
 </div>
 </section>
 
 <section>
 <div class="container">
-<div class="eyebrow reveal">The Picture</div>
-<h2 class="reveal">Two Versions Of December 2026</h2>
-<p class="section-sub reveal">Same starting point. Same brand. Different operating system underneath.</p>
+<div class="section-eyebrow">Already Done - Versus Day 1</div>
+<h2 class="section-title">What is already built. <em>Versus what gets shipped during the install.</em></h2>
+<p class="section-sub">Most of the strategy is done. The install is execution against a plan we have already mapped, not a discovery from scratch.</p>
 
-<div class="contrast-grid">
-<div class="contrast-card current reveal">
-<div class="contrast-tag">If Nothing Changes</div>
-<h3>Q4 2026, Status Quo</h3>
+<div class="comparison-grid">
+<div class="comp-col now">
+<span class="comp-label">Already in This Package - Day 0</span>
+<h3>Strategy + Working Assets</h3>
 <ul>
-<li>Accelerator still selling steady on a text-led homepage with no VSL above the fold</li>
-<li>YouTube → checkout traffic still bouncing without a video bridge</li>
-<li>Newsletter opt-in still asking for email with no stated incentive</li>
-<li>Executive tier still opaque behind a strategy call</li>
-<li>No premium tier above Executive (Accelerator graduates with closed deals still churning instead of ascending)</li>
-<li>Newer $497 wholesaling courses continuing to cite KeyGlee dispositions back at you</li>
+<li>Four pieces of funnel infrastructure ranked by revenue impact, with Year-1 floor math</li>
+<li>Astro Flipping enrolment landing page (HTML, deploy-ready)</li>
+<li>VSL preview script plus full 5-7 min VSL production notes</li>
+<li>Email sequences (cold-outreach, welcome, pre-enrolment, post-application, SMS)</li>
+<li>Content strategy plus 40-hook bank plus photoshoot brief</li>
+<li>Funnel blueprint plus tech stack mapped</li>
+<li>Copy strategy plus voice plus headline bank</li>
+<li>Bottleneck analysis with AG1 service catalog mapping</li>
+<li>Research file plus sensitivity profile</li>
 </ul>
 </div>
-<div class="contrast-card future reveal">
-<div class="contrast-tag">If We Build This</div>
-<h3>Q4 2026, System Live</h3>
+<div class="comp-col future">
+<span class="comp-label">Shipped Live - Days 1-7</span>
+<h3>Funnel Infrastructure Goes Live</h3>
 <ul>
-<li>VSL above the fold on astroflipping.com lifting cold-traffic conversion measurably</li>
-<li>Dedicated /wholesale-blueprint landing capturing email at scale from IG, YT, TikTok</li>
-<li>Segmented nurture cycling Accelerator alumni into the Cohort and prospects into the Accelerator</li>
-<li>Two Operator's Cohorts already run at the KeyGlee HQ, third sold</li>
-<li>Alumni community billing recurring revenue every month</li>
-<li>Year-one incremental in the $720K-$1.4M+ range, conservative</li>
-<li>The premium tier above every $497 wholesaling course citing your work is yours, productised, with KeyGlee dispositions as the moat</li>
+<li>Astro Flipping enrolment landing page with VSL deployed (Day 1-3)</li>
+<li>"What Astro Flipping Actually Teaches" 5-7 min VSL filmed and embedded (Day 1-3)</li>
+<li>Stripe plus payment plus email auto-trigger live (Day 2-3)</li>
+<li>Application Typeform live for Astro Flipping plus Housing Alchemy plus Energy of Money (Day 2-3)</li>
+<li>Wholesaling Readiness Score scorecard live (Day 4-5)</li>
+<li>Brand colours locked to Astro Flipping palette (Day 1)</li>
+<li>Bio-link router updated across IG / YouTube / podcasts / LinkedIn / TikTok (Day 5)</li>
+<li>Segmented welcome plus 7-touch pre-enrolment plus 4-touch post-app flows (Day 5-7)</li>
+<li>Unified hub at Jamil-owned domain, KeyGlee stays separate (Day 6-7)</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
+<section>
 <div class="container">
-<div class="eyebrow reveal">Who's Building This</div>
-<h2 class="reveal">Operator-Led, Agent-Powered</h2>
-<p class="section-sub reveal">Direct accountability through Andrei. Backed by the most current AI agent stack on the market and a UK production network. The build moves at agent-velocity, not agency-velocity.</p>
+<div class="section-eyebrow">Implementation</div>
+<h2 class="section-title">Four phases. <em>Built to compound.</em></h2>
+<p class="section-sub"><strong>Phases 1-2 ship in less than 7 days from kickoff.</strong> <strong>Money in the bank inside the first enrolment cycle after the install completes.</strong> Phases 3-4 are post-install scaling layers, they run on your timeline, not the install clock.</p>
 
+<div class="phases-grid">
+<div class="phase-card first">
+<div class="phase-meta"><span class="phase-name">Phase One</span><span class="phase-weeks">Days 1-3</span></div>
+<h3>Core VSL Funnel Install</h3>
+<ul>
+<li>Astro Flipping enrolment landing page deployed and live</li>
+<li>"What Astro Flipping Actually Teaches" VSL embedded ("Who is Jamil Damji?" placeholder Day 1, custom 5-7 min VSL by Day 3)</li>
+<li>Stripe plus payment plus email auto-trigger on enrolment</li>
+<li>Application Typeform live with intake routing</li>
+<li>Brand colours locked (one of the small Day-1 fixes)</li>
+</ul>
+<a href="https://calendly.com/ag-copy/call-with-andrei" class="revenue-cta" target="_blank">Money in the bank within 7 days of go-live<span class="arrow"> &rarr;</span></a>
+</div>
+
+<div class="phase-card">
+<div class="phase-meta"><span class="phase-name">Phase Two</span><span class="phase-weeks">Days 4-7</span></div>
+<h3>Scorecard + Segmented Email Layer + Unified Hub</h3>
+<ul>
+<li>Wholesaling Readiness Score live (ScoreApp / Typeform)</li>
+<li>Segmented welcome flow plus 7-touch pre-enrolment plus 4-touch post-application</li>
+<li>SimpleTexting SMS layer for cart abandon and enrolment confirmation</li>
+<li>Bio-link router updated across IG / YouTube / podcasts / LinkedIn / TikTok</li>
+<li>Unified hub at Jamil-owned domain, KeyGlee referenced as authority only</li>
+</ul>
+</div>
+
+<div class="phase-card">
+<div class="phase-meta"><span class="phase-name">Phase Three</span><span class="phase-weeks">Post-Install - Ongoing</span></div>
+<h3>Content Compound</h3>
+<ul>
+<li>Photoshoot plus b-roll banking for VSL plus ad creative library</li>
+<li>40-hook bank rolled into IG / TikTok / YT Shorts calendar</li>
+<li>Wholesale Hotline plus To The Moon plus YouTube cadence holds, episode descriptions point to scorecard</li>
+<li>Cross-platform cadence locked across IG / TikTok / YouTube / LinkedIn / X</li>
+</ul>
+</div>
+
+<div class="phase-card">
+<div class="phase-meta"><span class="phase-name">Phase Four</span><span class="phase-weeks">Post-Install - Ongoing</span></div>
+<h3>Paid Traffic</h3>
+<ul>
+<li>Pixel plus GA4 plus retargeting tags installed and firing</li>
+<li>Top-performing organic reels and Wholesale Hotline clips boosted on Meta plus YT Shorts plus TikTok</li>
+<li>Retargeting campaigns for landing-page abandons plus scorecard quiz starts</li>
+<li>Cold campaigns to lookalike audiences of Astro Flipping enrolees from post-install cycle 2 forward</li>
+<li>Lead flow target, scaling toward predictable enrolment cadence</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
+<div class="container">
+<div class="section-eyebrow">Who Builds This</div>
+<h2 class="section-title">AG1 Consulting. <em>One operator. Full-stack DFY.</em></h2>
+<p class="section-sub">Solo. Senior. Revenue-share aligned. Everything below is what I produced for my own clients, not partner agencies, not someone else's work.</p>
+
+<div class="creds-grid">
+<div class="cred-card headline-result">
+<div class="cred-headline">$0 to $172k/mo</div>
+<div class="cred-meta">First Month After Install - My Own Client</div>
+<div class="cred-detail">Took a single client of mine from <strong>zero to $172k/mo in the first month after install.</strong> Cumulative $742K over 5.5 months, 72% growth versus the prior period, same audience, restructured funnel.</div>
+</div>
+
+<div class="cred-card">
+<div class="cred-headline">Hereafter Farms</div>
+<div class="cred-meta">My Build - 180K Audience</div>
+<div class="cred-detail">Built end-to-end in weeks. Offer architecture, VSL, ManyChat, Skool community, GHL CRM, email plus SMS, my work, start to finish.</div>
+</div>
+
+<div class="cred-card">
+<div class="cred-headline">$1M+ Generated</div>
+<div class="cred-meta">My Aggregate - Across Clients</div>
+<div class="cred-detail">Total client revenue I have produced as a solo operator over the past 18 months. Revenue-share aligned engagements.</div>
+</div>
+</div>
+
+<div class="proof-callout">Verified Dashboards - The Receipts</div>
 <div class="proof-grid">
-<div class="proof-card reveal">
-<h3>Andrei Givero</h3>
-<div class="role">Founder · AG1 Consulting</div>
-<p>UK-based operator. Background is direct-response copy, paid media, and high-ticket coaching launches. Specialty contributions: VSL scripting and production, segmented email infrastructure, paid retargeting against warm audiences, premium-tier launch architecture for operators with established flagship programmes. Direct point of accountability through the build, the launch, and the first revenue cycle.</p>
+<div class="proof-card">
+<img src="proof/revenue-dashboard.png" alt="Business performance summary showing $742,715.59 total revenue and +72% versus prior period">
+<p class="proof-caption"><strong>$742,715.59 Total Revenue</strong><br>Oct 1 2025 to Mar 16 2026 - <strong>+72%</strong> vs prior period</p>
 </div>
-<div class="proof-card reveal">
-<h3>The AG1 Stack</h3>
-<div class="role">10+ AI Agents · Production Network</div>
-<p>AG1 ships with the most current AI agent stack on the market: 10+ purpose-built agents pre-deployed across VSL drafting, ad creative iteration, segmented email sequencing, audience research, copy review, and dashboard monitoring. Plus a UK-based production, editing, and paid-media network for the work that needs human hands. What takes a hand-rolled agency a quarter takes the AG1 stack a month, with the same operator on every call.</p>
+<div class="proof-card">
+<img src="proof/stripe-dashboard.png" alt="Stripe overview dashboard showing $331K gross volume and +101% versus prior period">
+<p class="proof-caption"><strong>$331K Stripe Gross Volume</strong><br>Same window - <strong>+101%</strong> vs prior period</p>
 </div>
+</div>
+
+<div class="trust-strip">
+<span class="trust-label">Built Across</span>
+<div class="trust-clients"><span>Hereafter Farms</span><span class="sep">&middot;</span><span>Wealth Coaches &amp; Educators</span><span class="sep">&middot;</span><span>Trade Service Operators</span><span class="sep">&middot;</span><span>Eight-Figure Team-Operated Brand (Confidential)</span></div>
+</div>
+
+<p class="ownership-line">Every result above is mine, not the prospect's, not a partner agency's. Solo work, solo proof.</p>
+
+<div class="client-quote">
+<p>"He is sharp, he is on time, he works very quickly. If there is a problem, he has already solved it."</p>
+<div class="attribution">- Said by three separate clients during fulfilment</div>
 </div>
 </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.04) 50%,transparent 100%)">
+<section id="book">
 <div class="container">
-<div class="eyebrow reveal">Verified Client Results</div>
-<h2 class="reveal">Receipts, Not Headlines</h2>
-<p class="section-sub reveal">One client. Six months. Oct 2025 - Mar 2026. Numbers below pulled from Stripe and revenue-attribution dashboards. Full screenshots below.</p>
-
-<div class="results-grid">
-<div class="result-card reveal"><div class="result-stat">$742K+</div><div class="result-label">Revenue generated, one client, 6 months</div></div>
-<div class="result-card reveal"><div class="result-stat">+101%</div><div class="result-label">Gross volume growth vs. prior period</div></div>
-<div class="result-card reveal"><div class="result-stat">+72%</div><div class="result-label">Total revenue growth vs. prior period</div></div>
-<div class="result-card reveal"><div class="result-stat">$306K</div><div class="result-label">Succeeded payments, single client window</div></div>
-</div>
-
-<div class="proof-images reveal">
-<figure class="proof-figure">
-<img src="proof/stripe-dashboard.png" alt="Stripe dashboard for the client window showing $331K gross volume, +101% period-on-period growth, $306,835.01 succeeded payments">
-<figcaption>Stripe · $331K gross volume · +101% period on period</figcaption>
-</figure>
-<figure class="proof-figure">
-<img src="proof/revenue-dashboard.png" alt="Revenue dashboard showing $742,715.59 total revenue, +72% period-on-period growth, attributed across Search, Campaigns, Social, and Other channels">
-<figcaption>Revenue dashboard · $742,715 total · +72% period on period</figcaption>
-</figure>
-</div>
-
-<div class="proof-disclaimer reveal"><strong>Note</strong> · Client identity withheld under NDA. Live screenshots and source dashboards walked through on the call.</div>
-</div>
-</section>
-
-<section>
-<div class="container-narrow">
-<div class="eyebrow reveal">The Offer</div>
-<h2 class="reveal">Here's What Working Together Looks Like</h2>
-<p class="section-sub reveal">Scope is fixed. Everything ships in the first 90 days. No add-ons sold separately, no surprise line items, no scope creep.</p>
-
-<div class="offer-block reveal">
-<h3>Scope</h3>
-<p class="scope-intro">Everything below is in. No retainer until the system produces. We come in for a 90-day build, hand you a launched optimisation layer, and walk you through how to run it without us if you'd rather take it in-house from there.</p>
-<ul class="scope-list">
-<li>Lever 01 front-end build: dedicated /wholesale-blueprint landing page, 8-12 minute AstroFlipping VSL filmed and embedded above the fold, mirror short-form on jdamji.com, segmented nurture infrastructure</li>
-<li>Lever 02 premium tier: The Operator's Cohort built, sales page live, first cohort sold off AstroFlipping alumni outreach</li>
-<li>Lever 03 paid layer: Meta + YouTube pre-roll + LinkedIn, 20-30 ad creatives in your voice, daily iteration</li>
-<li>Lever 04 retention loop: alumni community structure, referral architecture, repeat-buyer flows</li>
-<li>Application screening rubric and operator-fit scoring for the Cohort (3-5 closed deals + active operation gate)</li>
-<li>Two-day in-person Cohort event production for the first intake at the KeyGlee Phoenix HQ (venue, AV, run-of-show, deal-room session coordination)</li>
-<li>Conversion dashboard live from week one (cold-traffic conversion, /wholesale-blueprint opt-in rate, Accelerator attach rate, Cohort application rate, paid ROAS)</li>
-<li>VSL script written against your voice from the YouTube archive and your own on-camera quotes before filming</li>
-<li>All copy and creative reviewed against your relationship-first brand voice before publishing</li>
-<li>AG1's AI agent stack (10+ purpose-built agents) pre-deployed across the workflow: VSL drafting, ad iteration, email sequencing, audience research, copy review, dashboard monitoring</li>
-<li>Andrei on the calls through launch and the first full revenue cycle</li>
-</ul>
-<div class="price-note">Investment is set on the call once we agree the plan fits. No retainer until the system produces measurable lift.</div>
-</div>
-
-<div class="anti-hype reveal">
-<div class="anti-hype-eyebrow">What This Build Is Not</div>
-<ul class="anti-hype-list">
-<li>This is not an Accelerator rebuild. The product works, we don't touch the curriculum.</li>
-<li>This is not a YouTube content overhaul. Your channel cadence and voice stay where they are.</li>
-<li>This is not a "drop the relationship-first positioning" play. The positioning is the moat. We build around it.</li>
-<li>This is not a six-figure-per-month-overnight pitch. The numbers above are conservative and they take a year to compound.</li>
-</ul>
-<p>What this build does promise is <strong>a VSL above the fold on astroflipping.com, a dedicated /wholesale-blueprint lead-magnet landing page, a premium Cohort tier sold first to your warmest alumni at the KeyGlee Phoenix HQ, and a system you own end-to-end after 90 days</strong>. That's the floor. The ceiling and the durability layer ramp from there.</p>
-</div>
-</div>
-</section>
-
-<section style="background:linear-gradient(180deg,transparent 0%,rgba(201,151,58,.03) 50%,transparent 100%)">
-<div class="container-narrow">
-<div class="eyebrow reveal">Questions</div>
-<h2 class="reveal">The Ones An Operator At Your Stage Asks</h2>
-<p class="section-sub reveal">Short, direct answers. The longer ones we cover on the call.</p>
-
-<div class="reveal">
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Why would I run this with an outside operator instead of in-house?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>Because the team you have is already running the business. AstroFlipping is fulfilling and selling. KeyGlee is doing dispositions across 100+ markets. The A&E commitments and content cadence are real. Adding a 90-day VSL build, a dedicated lead-magnet page, a premium Cohort tier, and a paid acquisition layer on top of an already-loaded team is how those projects either get postponed by a year or get launched at half the quality. Outside operator is faster, cleaner, and exits when production hits steady state. We hand the system to your team after the launch cycle, not before.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much of my time does this need?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>One day to film the AstroFlipping VSL. One day to film the Operator's Cohort positioning. Calendar holds for cohort delivery in Lever 02 (two days at the KeyGlee Phoenix HQ per intake). The rest is build team work plus you reviewing the copy, creative, and pricing decisions before they ship. Most operators at your stage spend under 8 hours a month during the 90-day build, and under 2 hours a month after the system is in production.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will the Operator's Cohort cannibalise the Accelerator or the Executive tier?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>No. The Cohort and the Accelerator solve different problems. Accelerator is self-paced curriculum plus monthly coaching for wholesalers earlier in the journey. The Cohort is strategic operating-room access for wholesalers who already cleared the curriculum, closed 3-5 deals, and are ready to scale to a market-level operation with KeyGlee disposition network access. Different deliverable, different audience, different buying motion. Most Cohort applicants will be Accelerator (and Executive) graduates moving up the ladder, not net-new buyers choosing Cohort over Accelerator. Where there's overlap, the Cohort is the explicit "post-Executive" tier. It expands the ladder, it doesn't compete inside it.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How does this work alongside KeyGlee?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>KeyGlee is the operator brand. AstroFlipping is the education brand. This build sits on the AstroFlipping side, with KeyGlee as the structural moat for the Cohort tier (operator-tier disposition network access is the asset no other wholesaler-educator can match). The Cohort doesn't change KeyGlee operations or the KeyGlee partner model. It uses KeyGlee as the deal-room backdrop for the in-person intake at the Phoenix HQ and as the disposition partner for cohort members during the 90-day implementation.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if my existing Executive tier already covers some of what the Cohort would?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>There's overlap on some content (creative wholesaling, comp work, disposition strategy), but the deliverable is different. Executive is "we teach you the deeper methodology and give you more coaching." Cohort is "you've already proven 3-5 closed deals, now we operate at peer-room scale at the KeyGlee HQ, audit your live operation, and connect you into the operator-tier disposition network." Most Cohort attendees will have already passed through Accelerator and Executive and outgrown the curriculum. The overlap is feature, not bug. Cohort buys insider continuity for operators who don't want to start from scratch with another educator.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How quickly is there real revenue?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>Lever 01 VSL on astroflipping.com: first measurable conversion lift in week 4-6 once the page ships. /wholesale-blueprint landing page email capture: measurable in week 2-3 once IG bio link rewires. Lever 02 first Cohort sells in month 2-3, runs in month 3-4. Lever 03 paid layer starts producing measurable ROAS by month 4. Lever 04 alumni community ramps from month 4 onward. Most of the year-one incremental lands in months 4-12, not month one.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if the Cohort doesn't fill?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>The Cohort is sized at 6-8 seats first, sold to existing AstroFlipping alumni (the warmest list for this offer that exists). If the first intake under-fills (say, 4 confirmed instead of 6), we don't push it into a half-empty room. We pause, sharpen the positioning and the application screen, push the date by 30-45 days, and try again with the second wave of alumni outreach plus any external warm sources we can verify. Build doesn't continue billing while the Cohort isn't running. If after a second attempt the audience isn't there at the modelled price, we restructure the tier or move the budget into Lever 03 paid acquisition.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I want to stop after a Lever?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>You can stop at any Lever. After Lever 01 you own the /wholesale-blueprint landing page, the AstroFlipping VSL, and the segmented nurture as standalone lifts on your existing funnel. After Lever 02 you own the Cohort sales page, application flow, 90-day curriculum, and the first cohort revenue. After Lever 03 you own the paid acquisition system. Each Lever stands on its own as a fully shipped asset in case the rest stops being interesting to you.</p></div>
-</div>
-
-<div class="faq-item">
-<div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Why AG1 and not a larger agency?<div class="faq-toggle"></div></div>
-<div class="faq-a"><p>Two reasons. First, the build is specific. Most agencies sell the same growth playbook to every client (more ads, more content, more funnels). The work here is precise: a VSL above the fold on astroflipping.com, a dedicated /wholesale-blueprint lead-magnet, a premium Cohort tier launched off AstroFlipping alumni at the KeyGlee Phoenix HQ, a paid layer on top of an organic engine that already converts. Second, AG1 runs on the most current AI agent stack on the market: 10+ purpose-built agents pre-deployed across VSL drafting, ad creative iteration, segmented email sequencing, audience research, and copy review. The AG1 stack does in days what a 6-person hand-rolled agency does in weeks. You get the build velocity of a 10-person team with one direct point of accountability and no account-management layer between you and the work. If a larger agency is preferable after the call, that's a fair conversation. The plan above lands the same either way.</p></div>
+<div class="cta-section">
+<div class="section-eyebrow">Next Step</div>
+<h2>Walk through this <em>together?</em></h2>
+<p>30-minute working session. No pitch, no slides. You bring whichever pieces of the funnel-infrastructure plan feel sharpest and we map them against the VSL film schedule, the scorecard launch, the application Typeform plus Stripe gate, and the unified hub deployment.</p>
+<div class="cta-buttons">
+<a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary" target="_blank">Book The Working Session</a>
+<a href="mailto:andreigivero@gmail.com" class="cta-secondary-link">Or just reply to my email</a>
 </div>
 </div>
 </div>
 </section>
 
-<section>
+<footer>
 <div class="container">
-<div class="cta-section reveal">
-<div class="eyebrow">Next Step</div>
-<h2>Twenty Minutes. Four Topics.<br>You Decide From There.</h2>
-<p style="margin-bottom:24px">Here's exactly what we cover on the call, in order.</p>
-<div class="call-agenda">
-<div class="call-agenda-item"><span class="call-agenda-num">01</span><span class="call-agenda-text">Which leak point we touch first, calibrated to your team's current roadmap and the AstroFlipping renewal cycle.</span></div>
-<div class="call-agenda-item"><span class="call-agenda-num">02</span><span class="call-agenda-text">Operator's Cohort sizing, pricing tier, and which slice of AstroFlipping alumni we'd target with the first intake outreach.</span></div>
-<div class="call-agenda-item"><span class="call-agenda-num">03</span><span class="call-agenda-text">Timing, kickoff date, and what your time commitment actually looks like over the 90-day build.</span></div>
-<div class="call-agenda-item"><span class="call-agenda-num">04</span><span class="call-agenda-text">What gets built, what stays in-house with your existing team, and what happens after the 90 days are up.</span></div>
-</div>
-<p style="margin-bottom:36px">The plan above is built around the funnel you already run. The numbers are conservative. The leak points are observable from outside. The only outstanding decision is whether the lift is worth a 20-minute conversation.</p>
-<a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary" target="_blank">Book A Call</a>
-<div class="cta-sign">- Andrei | AG1 Consulting</div>
-</div>
-</div>
-</section>
-
-<footer class="footer">
-<div class="container">
-<p>Built by AG1 Consulting · This page was created exclusively for Jamil Damji · April 2026</p>
+<p class="signoff">Built specifically for Jamil Damji. Use what is useful, ignore the rest. The work is yours.</p>
+<p class="meta">AG1 Consulting - Prepared 2026-05-16 - Refreshed weekly until you book - Built for @jdamji</p>
+<p class="disclaimer">Astro Flipping is mentorship education. KeyGlee is a separate national wholesaling franchise business at keyglee.com. The funnel-infrastructure install does not promise wholesaling income, deal volume, or specific revenue outcomes. Income and revenue figures referenced on this page are floor estimates and ranges based on illustrative conversion lift on existing enrolment baselines, not guarantees on mentorship outcomes or wholesaling income. Results vary, dependent on operator inputs, existing enrolment baseline, podcast and YouTube traffic, market conditions, capital, and lead source.</p>
 </div>
 </footer>
 
-<a href="https://calendly.com/ag-copy/call-with-andrei" target="_blank" class="floating-cta">Book A Call</a>
-
-<script>
-const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
-</script>
 </body>
 </html>
